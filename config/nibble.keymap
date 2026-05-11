@@ -20,7 +20,7 @@
     anti_idle {
         compatible = "zmk,anti-idle-generic";
         interval-ms = <30000>;
-        bindings = <&mmv MOVE_DOWN &mmv MOVE_UP>;
+        bindings = <&kp F1 &kp F1>;
         tap_ms = <40>;
         wait_ms = <200>;
     };
