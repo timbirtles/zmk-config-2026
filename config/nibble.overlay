@@ -19,14 +19,14 @@
         b-gpios = <&pro_micro 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         steps = <80>;
         status = "okay";
-        polling-mode;
-        debounce-press-ms = <5>;
-        debounce-release-ms = <5>;
-        polling-interval-msec = <10>;
     };
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-demux";
+        polling-mode;
+        debounce-press-ms = <5>;
+        debounce-release-ms = <5>;
+        polling-interval-msec = <10>;
         polling-interval-msec = <25>;
         input-gpios
             = <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
