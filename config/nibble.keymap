@@ -77,6 +77,11 @@
 
 
 / {
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder_1>;
+        triggers-per-rotation = <40>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -84,7 +89,7 @@
         default_layer {
             display-name = "Default";
 
-            
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
 
             bindings = <
             &kp ESC   &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8  &kp N9    &kp N0    &kp MINUS &kp EQUAL &kp BSPC &func_c
@@ -97,7 +102,8 @@
         function_layer {
             display-name = "Function";
 
-    
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+
             bindings = <
             &kp TILDE &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8  &kp F9    &kp F10   &kp F11   &kp F12   &trans   &login
 &kp C_MUTE  &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans    &trans   &bootloader
