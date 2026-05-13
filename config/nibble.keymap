@@ -19,8 +19,8 @@
 / {
     anti_idle {
         compatible = "zmk,anti-idle-generic";
-        interval-ms = <30000>;
-        bindings = <&kp F1 &kp F1>;
+        interval-ms = <25000>;
+        bindings = <&kp F &kp F>;
         tap_ms = <40>;
         wait_ms = <200>;
     };
