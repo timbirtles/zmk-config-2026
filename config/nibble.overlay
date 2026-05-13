@@ -1,0 +1,6 @@
+&kscan0 {
+    polling-mode;
+    debounce-press-ms = <5>;
+    debounce-release-ms = <5>;
+    polling-interval-msec = <10>;
+};
