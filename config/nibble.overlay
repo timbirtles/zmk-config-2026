@@ -23,9 +23,6 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-demux";
-        debounce-press-ms = <5>;
-        debounce-release-ms = <5>;
-        polling-interval-msec = <10>;
         polling-interval-msec = <25>;
         input-gpios
             = <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
